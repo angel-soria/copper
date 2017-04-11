@@ -1,0 +1,2038 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("Montserrat-Light.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("Montserrat-ExtraLight.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+/* line 22, ../sass/screen.scss */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* line 32, ../sass/screen.scss */
+.right-align {
+  text-align: right;
+}
+
+/* line 36, ../sass/screen.scss */
+header .speciall-con {
+  padding: 0;
+  margin: 0;
+}
+/* line 39, ../sass/screen.scss */
+header .speciall-con > .row {
+  margin: 0;
+}
+/* line 41, ../sass/screen.scss */
+header .speciall-con > .row > .col-xs-12 {
+  padding: 0;
+}
+/* line 46, ../sass/screen.scss */
+header nav {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 80px;
+  position: relative;
+}
+/* line 53, ../sass/screen.scss */
+header nav ul {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+  height: 80px;
+}
+/* line 58, ../sass/screen.scss */
+header nav ul > li {
+  display: inline-block;
+}
+/* line 60, ../sass/screen.scss */
+header nav ul > li a {
+  color: #333333;
+  display: block;
+  padding: 13px 20px;
+  text-decoration: none;
+  float: left;
+  height: 80px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+/* line 69, ../sass/screen.scss */
+header nav ul > li a .caret {
+  margin-top: -4px;
+}
+/* line 73, ../sass/screen.scss */
+header nav ul > li i {
+  font-size: 24px;
+  position: relative;
+  top: 2px;
+}
+/* line 78, ../sass/screen.scss */
+header nav ul > li:hover {
+  background: #bc6017;
+}
+/* line 81, ../sass/screen.scss */
+header nav ul > li:hover.logo {
+  background: white;
+}
+/* line 85, ../sass/screen.scss */
+header nav ul > li:hover > a {
+  color: white;
+  text-decoration: none;
+}
+/* line 88, ../sass/screen.scss */
+header nav ul > li:hover > a.search {
+  color: #bc6017;
+}
+/* line 92, ../sass/screen.scss */
+header nav ul > li:hover > ul {
+  display: block;
+}
+/* line 97, ../sass/screen.scss */
+header nav ul ul {
+  background: white;
+  border-top: 5px solid #bc6017;
+  padding: 0;
+  text-align: center;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  z-index: 88;
+  height: 84px;
+}
+/* line 113, ../sass/screen.scss */
+header .head {
+  background: #4d4c4c;
+  color: #fff;
+  padding: 4px 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/* line 120, ../sass/screen.scss */
+header .head p.first span {
+  background: #fff;
+  color: #4d4c4c;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: -1px;
+  margin-right: 4px;
+}
+/* line 130, ../sass/screen.scss */
+header .head p.first span i {
+  position: relative;
+  left: 4px;
+  top: 4px;
+}
+/* line 137, ../sass/screen.scss */
+header .head a {
+  color: #fff;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+/* line 141, ../sass/screen.scss */
+header .head a:hover {
+  color: #bc6017;
+  text-decoration: none;
+}
+/* line 146, ../sass/screen.scss */
+header .head .languaje {
+  text-align: center;
+}
+/* line 148, ../sass/screen.scss */
+header .head .languaje span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+  top: -6px;
+}
+/* line 153, ../sass/screen.scss */
+header .head .languaje i {
+  font-size: 20px;
+}
+/* line 158, ../sass/screen.scss */
+header .head .icons a {
+  background: #fff;
+  color: #4d4c4c;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: -1px;
+  margin-left: 2px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+/* line 170, ../sass/screen.scss */
+header .head .icons a i {
+  position: relative;
+  left: -4px;
+  top: 4px;
+}
+/* line 175, ../sass/screen.scss */
+header .head .icons a:hover {
+  background: #bc6017;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 185, ../sass/screen.scss */
+.mini-about {
+  background: url("../assets/imgs/mini-about.jpg") no-repeat;
+  background-size: cover;
+  padding: 55px 0px 0px;
+}
+/* line 189, ../sass/screen.scss */
+.mini-about .nav-tabs {
+  margin-top: 90px;
+  font-weight: 400;
+  position: relative;
+  bottom: -1px;
+  border-bottom: 0px;
+}
+/* line 195, ../sass/screen.scss */
+.mini-about .nav-tabs a {
+  color: #4d4c4c;
+  text-transform: uppercase;
+}
+/* line 201, ../sass/screen.scss */
+.mini-about .nav-tabs > li.active > a, .mini-about .nav-tabs > li.active > a:focus, .mini-about .nav-tabs > li.active > a:hover {
+  background: #4d4c4c;
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+}
+/* line 207, ../sass/screen.scss */
+.mini-about .nav > li > a:hover, .mini-about .nav > li > a:focus {
+  background: none;
+  border: transparent;
+}
+/* line 211, ../sass/screen.scss */
+.mini-about h1 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+/* line 215, ../sass/screen.scss */
+.mini-about .contenido {
+  font-weight: 400;
+  color: #544f4d;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 50px;
+  margin-bottom: 80px;
+}
+/* line 223, ../sass/screen.scss */
+.mini-about .contenido strong {
+  font-weight: 700;
+}
+
+/* line 232, ../sass/screen.scss */
+.special-row .cols {
+  padding: 0 3px 0 15px;
+}
+/* line 235, ../sass/screen.scss */
+.special-row .cols-2 {
+  padding: 0 15px 0 0px;
+}
+/* line 238, ../sass/screen.scss */
+.special-row .s-margin {
+  margin-bottom: 3px;
+}
+/* line 241, ../sass/screen.scss */
+.special-row .categoria-place {
+  position: relative;
+}
+/* line 245, ../sass/screen.scss */
+.special-row .categoria-place a h3 {
+  position: absolute;
+  top: 38%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 82px;
+  color: #fff;
+  text-shadow: 2px 2px #bc6017;
+  text-transform: uppercase;
+  z-index: 999;
+}
+/* line 258, ../sass/screen.scss */
+.special-row .categoria-place a h3.secondary-title {
+  font-size: 24px;
+  top: 40%;
+}
+/* line 263, ../sass/screen.scss */
+.special-row .categoria-place a .opacity {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+/* line 274, ../sass/screen.scss */
+.special-row .categoria-place a:hover .opacity {
+  opacity: 1;
+}
+
+/* line 286, ../sass/screen.scss */
+.gray-zone {
+  background: #4d4c4c;
+  padding: 20px 0;
+}
+
+/* line 291, ../sass/screen.scss */
+.content-product .producto-white {
+  background: #f7f7f7;
+}
+/* line 293, ../sass/screen.scss */
+.content-product .producto-white .cabezal {
+  position: relative;
+}
+/* line 295, ../sass/screen.scss */
+.content-product .producto-white .cabezal.line {
+  border-top: 1px solid #bc6017;
+  border-left: 1px solid #bc6017;
+  border-right: 1px solid #bc6017;
+}
+/* line 300, ../sass/screen.scss */
+.content-product .producto-white .cabezal .icon {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  position: absolute;
+  background: #4d4c4c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  top: 30%;
+  margin: auto;
+  right: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  opacity: 0;
+}
+/* line 317, ../sass/screen.scss */
+.content-product .producto-white .cabezal .icon i {
+  font-size: 50px;
+  margin-top: 10px;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+/* line 324, ../sass/screen.scss */
+.content-product .producto-white .cabezal .caption-primer {
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  text-shadow: #000 1px 1px 2px;
+}
+/* line 329, ../sass/screen.scss */
+.content-product .producto-white .cabezal .caption-primer h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: white;
+}
+/* line 336, ../sass/screen.scss */
+.content-product .producto-white .cabezal .caption-primer p {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+}
+/* line 345, ../sass/screen.scss */
+.content-product .producto-white .pie-producto {
+  text-align: center;
+  padding: 13px;
+  color: #4d4c4c;
+}
+/* line 349, ../sass/screen.scss */
+.content-product .producto-white .pie-producto h4 {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+/* line 355, ../sass/screen.scss */
+.content-product .producto-white .pie-producto p {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+/* line 359, ../sass/screen.scss */
+.content-product .producto-white .pie-producto span {
+  padding: 12px;
+  font-size: 12px;
+  background-color: #bc6017;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+}
+/* line 369, ../sass/screen.scss */
+.content-product .producto-white.entrada-category {
+  margin-bottom: 30px;
+}
+/* line 371, ../sass/screen.scss */
+.content-product .producto-white.entrada-category .pie-producto {
+  padding: 32px;
+  text-align: left;
+}
+/* line 374, ../sass/screen.scss */
+.content-product .producto-white.entrada-category .pie-producto p {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  color: #74777b;
+  margin-bottom: 20px;
+}
+/* line 381, ../sass/screen.scss */
+.content-product .producto-white.entrada-category .pie-producto h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #74777b;
+}
+/* line 392, ../sass/screen.scss */
+.content-product:hover {
+  text-decoration: none;
+}
+/* line 396, ../sass/screen.scss */
+.content-product:hover .producto-white .cabezal .icon {
+  opacity: 1;
+}
+/* line 401, ../sass/screen.scss */
+.content-product:hover .producto-white .pie-producto span {
+  background-color: #cf742d;
+}
+
+/* line 408, ../sass/screen.scss */
+.sales {
+  padding: 80px 0 85px;
+}
+/* line 410, ../sass/screen.scss */
+.sales .fancy {
+  line-height: 0.85;
+  text-align: center;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #bc6017;
+  margin-bottom: 65px;
+}
+/* line 418, ../sass/screen.scss */
+.sales .fancy span {
+  display: inline-block;
+  position: relative;
+  font-size: 36px;
+  position: relative;
+  left: -3px;
+}
+/* line 425, ../sass/screen.scss */
+.sales .fancy span:before,
+.sales .fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #dbdbdb;
+  top: 0;
+  width: 150%;
+}
+/* line 434, ../sass/screen.scss */
+.sales .fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+/* line 438, ../sass/screen.scss */
+.sales .fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+/* line 443, ../sass/screen.scss */
+.newsletter {
+  font-size: 17px;
+  background: #ededed;
+  padding: 15px 0px;
+  color: #4d4c4c;
+}
+/* line 448, ../sass/screen.scss */
+.newsletter form {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-left: 15px;
+}
+/* line 451, ../sass/screen.scss */
+.newsletter form input {
+  border: none;
+  padding: 4px;
+}
+/* line 455, ../sass/screen.scss */
+.newsletter form input[type="submit"] {
+  border: none;
+  color: white;
+  background: #9d5318;
+  font-size: 23px;
+  position: relative;
+  top: 1px;
+  left: -5px;
+  padding: 2px 8px;
+}
+/* line 466, ../sass/screen.scss */
+.newsletter .redes {
+  text-align: right;
+}
+/* line 468, ../sass/screen.scss */
+.newsletter .redes span {
+  position: relative;
+  top: -2px;
+  margin-right: 15px;
+}
+/* line 473, ../sass/screen.scss */
+.newsletter .redes a {
+  text-decoration: none;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 477, ../sass/screen.scss */
+.newsletter .redes a:hover {
+  text-decoration: none;
+}
+/* line 480, ../sass/screen.scss */
+.newsletter .redes a:last-child {
+  margin-right: 0px;
+}
+/* line 485, ../sass/screen.scss */
+.newsletter .copp-facebook {
+  color: #3c5a99;
+  font-size: 24px;
+}
+/* line 489, ../sass/screen.scss */
+.newsletter .copp-youtube {
+  color: #ba2126;
+  font-size: 24px;
+}
+
+/* line 495, ../sass/screen.scss */
+footer {
+  background: url("../assets/imgs/footer-bg.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 45px;
+}
+/* line 499, ../sass/screen.scss */
+footer h3 {
+  color: #544f4d;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 5px;
+}
+/* line 507, ../sass/screen.scss */
+footer ul {
+  text-align: right;
+  font-size: 15px;
+}
+/* line 510, ../sass/screen.scss */
+footer ul li {
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+/* line 514, ../sass/screen.scss */
+footer ul a {
+  color: #7a7675;
+  font-weight: 500;
+  text-decoration: none;
+}
+/* line 518, ../sass/screen.scss */
+footer ul a:hover {
+  color: #9d5318;
+  text-decoration: none;
+}
+/* line 525, ../sass/screen.scss */
+footer .imagen-footer img {
+  margin: auto;
+}
+/* line 530, ../sass/screen.scss */
+footer .mail a, footer .tel a {
+  color: #4d4c4c;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 531, ../sass/screen.scss */
+footer .mail a span, footer .tel a span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  background: white;
+  -moz-border-radius: 55px;
+  -webkit-border-radius: 55px;
+  border-radius: 55px;
+  padding: 7px 9px;
+  font-size: 24px;
+  margin-right: 6px;
+}
+/* line 538, ../sass/screen.scss */
+footer .mail a span i, footer .tel a span i {
+  position: relative;
+  top: 2px;
+}
+/* line 549, ../sass/screen.scss */
+footer .mail a:hover, footer .tel a:hover {
+  text-decoration: none;
+  color: #9d5318;
+}
+/* line 556, ../sass/screen.scss */
+footer .tel {
+  text-align: right;
+}
+/* line 558, ../sass/screen.scss */
+footer .tel span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  background: white;
+  -moz-border-radius: 55px;
+  -webkit-border-radius: 55px;
+  border-radius: 55px;
+  padding: 7px 9px;
+  font-size: 24px;
+  margin-left: 6px;
+  top: -8px;
+  position: relative;
+}
+/* line 567, ../sass/screen.scss */
+footer .tel span i {
+  position: relative;
+  top: 2px;
+}
+
+/* line 574, ../sass/screen.scss */
+.last-footer {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 25px 0px;
+  margin-top: 45px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+/* line 581, ../sass/screen.scss */
+.last-footer a {
+  color: white;
+  text-decoration: none;
+}
+/* line 585, ../sass/screen.scss */
+.last-footer a:hover {
+  text-decoration: underline;
+}
+/* line 590, ../sass/screen.scss */
+.last-footer .sign {
+  text-align: right;
+}
+
+/* line 594, ../sass/screen.scss */
+.pagina-single {
+  padding: 30px 0;
+  background: url("../assets/imgs/mini-abou_2t.jpg") no-repeat;
+  background-size: cover;
+}
+/* line 598, ../sass/screen.scss */
+.pagina-single.productos {
+  background: none;
+  background-color: #e7ecea;
+}
+/* line 602, ../sass/screen.scss */
+.pagina-single .breadcrumbs {
+  font-size: 10px;
+  color: #bc6017;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+/* line 607, ../sass/screen.scss */
+.pagina-single .breadcrumbs li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 4px;
+}
+/* line 611, ../sass/screen.scss */
+.pagina-single .breadcrumbs a {
+  font-size: 10px;
+  color: #bc6017;
+}
+/* line 616, ../sass/screen.scss */
+.pagina-single h1 {
+  color: #74777b;
+  font-weight: 600;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+/* line 622, ../sass/screen.scss */
+.pagina-single h1.single {
+  margin-bottom: 15px;
+}
+/* line 626, ../sass/screen.scss */
+.pagina-single .excerpt {
+  color: #bdc2c9;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  line-height: 1.1;
+}
+/* line 632, ../sass/screen.scss */
+.pagina-single .excerpt.single {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+/* line 637, ../sass/screen.scss */
+.pagina-single .complemento {
+  padding: 35px 0px;
+}
+/* line 639, ../sass/screen.scss */
+.pagina-single .complemento h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+/* line 645, ../sass/screen.scss */
+.pagina-single .imagen {
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+/* line 650, ../sass/screen.scss */
+.contenido-word {
+  font-size: 24px;
+  font-weight: 300;
+  color: #544f4d;
+  line-height: 1.25;
+  /* =WordPress Core
+  -------------------------------------------------------------- */
+  /* Text meant only for screen readers. */
+}
+/* line 655, ../sass/screen.scss */
+.contenido-word iframe {
+  width: 100%;
+  height: 418px;
+}
+/* line 659, ../sass/screen.scss */
+.contenido-word em {
+  font-style: italic;
+}
+/* line 662, ../sass/screen.scss */
+.contenido-word blockquote {
+  margin-left: 85px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 75px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+/* line 669, ../sass/screen.scss */
+.contenido-word blockquote:before {
+  content: "";
+  background: url("../assets/imgs/iso.png") no-repeat;
+  width: 76px;
+  height: 77px;
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* line 682, ../sass/screen.scss */
+.contenido-word p {
+  margin-bottom: 20px;
+}
+/* line 685, ../sass/screen.scss */
+.contenido-word a {
+  color: #9d5318;
+}
+/* line 688, ../sass/screen.scss */
+.contenido-word strong {
+  font-weight: 700;
+}
+/* line 693, ../sass/screen.scss */
+.contenido-word .alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 697, ../sass/screen.scss */
+.contenido-word .aligncenter,
+.contenido-word div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+/* line 703, ../sass/screen.scss */
+.contenido-word .alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+/* line 708, ../sass/screen.scss */
+.contenido-word .alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+/* line 713, ../sass/screen.scss */
+.contenido-word a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+/* line 718, ../sass/screen.scss */
+.contenido-word a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 722, ../sass/screen.scss */
+.contenido-word a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+/* line 727, ../sass/screen.scss */
+.contenido-word a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 733, ../sass/screen.scss */
+.contenido-word .wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+/* line 741, ../sass/screen.scss */
+.contenido-word .wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 745, ../sass/screen.scss */
+.contenido-word .wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+/* line 749, ../sass/screen.scss */
+.contenido-word .wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+/* line 753, ../sass/screen.scss */
+.contenido-word .wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+/* line 762, ../sass/screen.scss */
+.contenido-word .wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+/* line 770, ../sass/screen.scss */
+.contenido-word .screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+/* line 779, ../sass/screen.scss */
+.contenido-word .screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* line 800, ../sass/screen.scss */
+.carrusel {
+  margin: 25px 0px;
+}
+/* line 802, ../sass/screen.scss */
+.carrusel .carousel-control {
+  background: white;
+  opacity: 0.85;
+  width: 33px;
+  height: 108px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: none !important;
+  color: #c6c5c4 !important;
+  text-shadow: none !important;
+}
+/* line 813, ../sass/screen.scss */
+.carrusel .carousel-control i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 18px;
+  height: 20px;
+}
+/* line 825, ../sass/screen.scss */
+.carrusel .carousel-inner > .item > a > img, .carrusel .carousel-inner > .item > img {
+  margin: auto;
+}
+
+/* line 830, ../sass/screen.scss */
+.call-to-action {
+  text-align: center;
+  padding: 85px 0px;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  position: relative;
+}
+/* line 836, ../sass/screen.scss */
+.call-to-action .overlay {
+  background: rgba(60, 64, 75, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+/* line 843, ../sass/screen.scss */
+.call-to-action h3, .call-to-action p {
+  color: #fff;
+  font-size: 70px;
+  text-shadow: #000 1px 1px 2px;
+  text-transform: uppercase;
+}
+/* line 849, ../sass/screen.scss */
+.call-to-action p {
+  margin-top: 10px;
+  font-size: 30px;
+}
+/* line 853, ../sass/screen.scss */
+.call-to-action a {
+  background: white;
+  text-transform: uppercase;
+  color: #9d5318;
+  padding: 15px 35px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-top: 12px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+/* line 862, ../sass/screen.scss */
+.call-to-action a:hover {
+  background: #9d5318;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 870, ../sass/screen.scss */
+.filters {
+  padding: 5px 0px;
+  background: #dee3e1;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+/* line 875, ../sass/screen.scss */
+.filters ul {
+  text-align: center;
+}
+/* line 877, ../sass/screen.scss */
+.filters ul li {
+  margin: 5px 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 880, ../sass/screen.scss */
+.filters ul li a {
+  background: white;
+  text-transform: uppercase;
+  color: #9d5318;
+  padding: 15px 35px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+/* line 888, ../sass/screen.scss */
+.filters ul li a.active, .filters ul li a:hover {
+  background: #bc6017;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 897, ../sass/screen.scss */
+.paginacion {
+  text-align: center;
+  margin: 70px 0;
+}
+/* line 900, ../sass/screen.scss */
+.paginacion span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: -5px;
+  padding: 11px 5px;
+  background: #bc6017;
+  color: white;
+}
+/* line 907, ../sass/screen.scss */
+.paginacion a {
+  background: white;
+  text-transform: uppercase;
+  color: #373737;
+  padding: 11px 15px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  margin-right: -5px;
+}
+/* line 916, ../sass/screen.scss */
+.paginacion a:hover {
+  background: #bc6017;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 923, ../sass/screen.scss */
+.bloque-blanco {
+  background: white;
+  padding: 35px;
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+/* line 928, ../sass/screen.scss */
+.bloque-blanco h3 {
+  font-size: 25px;
+  color: #bdc2c9;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+/* line 934, ../sass/screen.scss */
+.bloque-blanco img {
+  margin: auto;
+}
+/* line 937, ../sass/screen.scss */
+.bloque-blanco p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-top: 6px;
+  color: #bdc2c9;
+}
+/* line 944, ../sass/screen.scss */
+.bloque-blanco span {
+  display: inline-block;
+  border: 1px solid #bdc2c9;
+  border-radius: 19px;
+  padding: 4px 6px;
+  color: black;
+}
+/* line 950, ../sass/screen.scss */
+.bloque-blanco span i {
+  position: relative;
+  top: 2px;
+}
+/* line 955, ../sass/screen.scss */
+.bloque-blanco .mrgin {
+  margin: 24px 0;
+  text-align: right;
+}
+/* line 958, ../sass/screen.scss */
+.bloque-blanco .mrgin a {
+  font-weight: 300;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #bdc2c9;
+}
+/* line 966, ../sass/screen.scss */
+.bloque-blanco .form-contacto input, .bloque-blanco .form-contacto textarea {
+  background: #e7ecea;
+  color: black;
+  padding: 15px 10px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  display: block;
+  border: none;
+  width: 100%;
+  resize: none;
+}
+/* line 976, ../sass/screen.scss */
+.bloque-blanco .form-contacto input[type="submit"], .bloque-blanco .form-contacto textarea[type="submit"] {
+  display: inline-block;
+  width: initial;
+  background: #4d4c4c;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  float: right;
+  padding: 14px 49px;
+}
+/* line 985, ../sass/screen.scss */
+.bloque-blanco .form-contacto input[type="submit"]:hover, .bloque-blanco .form-contacto textarea[type="submit"]:hover {
+  background: #9d5318;
+}
+/* line 990, ../sass/screen.scss */
+.bloque-blanco .form-contacto label.error {
+  color: red;
+  position: relative;
+  top: -13px;
+  font-size: 14px;
+}
+
+/* line 998, ../sass/screen.scss */
+.tabs-producto {
+  color: #74777b;
+}
+/* line 1000, ../sass/screen.scss */
+.tabs-producto .sociales {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 1003, ../sass/screen.scss */
+.tabs-producto .sociales h4 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 50px 0 20px;
+}
+/* line 1009, ../sass/screen.scss */
+.tabs-producto .sociales a {
+  font-size: 30px;
+  padding: 9px;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: inline-block;
+  margin-right: 5px;
+  background: #3c579e;
+}
+/* line 1019, ../sass/screen.scss */
+.tabs-producto .sociales a:last-child {
+  background: #55acee;
+}
+/* line 1022, ../sass/screen.scss */
+.tabs-producto .sociales a:hover {
+  background: #9d5318;
+}
+/* line 1027, ../sass/screen.scss */
+.tabs-producto .nav-tabs {
+  border: none;
+}
+/* line 1029, ../sass/screen.scss */
+.tabs-producto .nav-tabs a {
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #74777b;
+  border: none;
+  padding: 5px 7px;
+}
+/* line 1037, ../sass/screen.scss */
+.tabs-producto .nav-tabs li {
+  margin-right: 8px;
+}
+/* line 1039, ../sass/screen.scss */
+.tabs-producto .nav-tabs li a:hover {
+  background: transparent;
+}
+/* line 1044, ../sass/screen.scss */
+.tabs-producto .nav-tabs li.active a {
+  border: none;
+  border-bottom: 5px solid #4d4c4c;
+}
+/* line 1051, ../sass/screen.scss */
+.tabs-producto .tab-content {
+  margin-top: 35px;
+  color: #544f4d;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.28;
+}
+/* line 1057, ../sass/screen.scss */
+.tabs-producto .tab-content div {
+  /* =WordPress Core
+  -------------------------------------------------------------- */
+  /* Text meant only for screen readers. */
+}
+/* line 1058, ../sass/screen.scss */
+.tabs-producto .tab-content div iframe {
+  width: 100%;
+  height: 418px;
+}
+/* line 1062, ../sass/screen.scss */
+.tabs-producto .tab-content div em {
+  font-style: italic;
+}
+/* line 1065, ../sass/screen.scss */
+.tabs-producto .tab-content div blockquote {
+  margin-left: 85px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 75px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+/* line 1072, ../sass/screen.scss */
+.tabs-producto .tab-content div blockquote:before {
+  content: "";
+  background: url("../assets/imgs/iso.png") no-repeat;
+  width: 76px;
+  height: 77px;
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* line 1085, ../sass/screen.scss */
+.tabs-producto .tab-content div p {
+  margin-bottom: 20px;
+}
+/* line 1088, ../sass/screen.scss */
+.tabs-producto .tab-content div a {
+  color: #9d5318;
+}
+/* line 1091, ../sass/screen.scss */
+.tabs-producto .tab-content div strong {
+  font-weight: 700;
+}
+/* line 1096, ../sass/screen.scss */
+.tabs-producto .tab-content div .alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 1100, ../sass/screen.scss */
+.tabs-producto .tab-content div .aligncenter,
+.tabs-producto .tab-content div div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+/* line 1106, ../sass/screen.scss */
+.tabs-producto .tab-content div .alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+/* line 1111, ../sass/screen.scss */
+.tabs-producto .tab-content div .alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+/* line 1116, ../sass/screen.scss */
+.tabs-producto .tab-content div a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+/* line 1121, ../sass/screen.scss */
+.tabs-producto .tab-content div a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 1125, ../sass/screen.scss */
+.tabs-producto .tab-content div a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+/* line 1130, ../sass/screen.scss */
+.tabs-producto .tab-content div a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 1136, ../sass/screen.scss */
+.tabs-producto .tab-content div .wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+/* line 1144, ../sass/screen.scss */
+.tabs-producto .tab-content div .wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 1148, ../sass/screen.scss */
+.tabs-producto .tab-content div .wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+/* line 1152, ../sass/screen.scss */
+.tabs-producto .tab-content div .wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+/* line 1156, ../sass/screen.scss */
+.tabs-producto .tab-content div .wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+/* line 1165, ../sass/screen.scss */
+.tabs-producto .tab-content div .wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+/* line 1173, ../sass/screen.scss */
+.tabs-producto .tab-content div .screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+/* line 1182, ../sass/screen.scss */
+.tabs-producto .tab-content div .screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* line 1204, ../sass/screen.scss */
+.producto-single {
+  padding: 30px 0;
+  background: #f5f5f5;
+}
+/* line 1208, ../sass/screen.scss */
+.producto-single .slick-arrow {
+  z-index: 99999;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+/* line 1224, ../sass/screen.scss */
+.producto-single .slick-arrow:before {
+  content: "\65";
+  font-family: "copper" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  font-size: 20px;
+  line-height: 1;
+  color: #c6c5c4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0.85;
+  width: 33px;
+  height: 108px;
+  padding: 44px 7px;
+}
+/* line 1243, ../sass/screen.scss */
+.producto-single .slick-arrow.slick-next {
+  right: 14px;
+}
+/* line 1245, ../sass/screen.scss */
+.producto-single .slick-arrow.slick-next:before {
+  content: "\63";
+}
+/* line 1251, ../sass/screen.scss */
+.producto-single .slider_productos .slick-slide {
+  height: 350px !important;
+}
+/* line 1254, ../sass/screen.scss */
+.producto-single .slider_productos .slick-slide img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+}
+/* line 1266, ../sass/screen.scss */
+.producto-single .slider_productos_tab .slick-slide img {
+  max-width: 95%;
+}
+/* line 1271, ../sass/screen.scss */
+.producto-single .breadcrumbs {
+  font-size: 10px;
+  color: #bc6017;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+/* line 1276, ../sass/screen.scss */
+.producto-single .breadcrumbs li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 4px;
+}
+/* line 1280, ../sass/screen.scss */
+.producto-single .breadcrumbs a {
+  font-size: 10px;
+  color: #bc6017;
+}
+/* line 1285, ../sass/screen.scss */
+.producto-single .contenido-producto {
+  color: #74777b;
+  font-weight: 300;
+}
+/* line 1288, ../sass/screen.scss */
+.producto-single .contenido-producto p.identificador {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+/* line 1290, ../sass/screen.scss */
+.producto-single .contenido-producto p.identificador span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 1296, ../sass/screen.scss */
+.producto-single .contenido-producto h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+/* line 1301, ../sass/screen.scss */
+.producto-single .contenido-producto p.price {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* line 1305, ../sass/screen.scss */
+.producto-single .contenido-producto p.descripcion {
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+/* line 1310, ../sass/screen.scss */
+.producto-single .contenido-producto p.disponible {
+  display: inline-block;
+  background: #bc6017;
+  color: white;
+  font-size: 14px;
+  padding: 6px 8px;
+  text-transform: uppercase;
+}
+/* line 1318, ../sass/screen.scss */
+.producto-single .contenido-producto a {
+  font-weight: 400;
+  margin-top: 45px;
+  display: inline-block;
+  background: #4d4c4c;
+  color: white;
+  font-size: 18px;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+/* line 1329, ../sass/screen.scss */
+.producto-single .contenido-producto a:hover {
+  background: #bc6017;
+  text-decoration: none;
+}
+
+/* line 1336, ../sass/screen.scss */
+.home-slider {
+  position: relative;
+}
+/* line 1338, ../sass/screen.scss */
+.home-slider div.slide-div {
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  height: 550px;
+}
+/* line 1343, ../sass/screen.scss */
+.home-slider div.contenido-slide {
+  padding-left: 90px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 650px;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 80px;
+}
+/* line 1352, ../sass/screen.scss */
+.home-slider div.contenido-slide h2 {
+  font-size: 70px;
+  text-shadow: #000 1px 1px 2px;
+}
+/* line 1356, ../sass/screen.scss */
+.home-slider div.contenido-slide p {
+  font-size: 28px;
+  text-shadow: #000 1px 1px 2px;
+  margin-bottom: 15px;
+}
+/* line 1361, ../sass/screen.scss */
+.home-slider div.contenido-slide a {
+  font-weight: 400;
+  margin-top: 20px;
+  display: inline-block;
+  background: #4d4c4c;
+  color: white;
+  font-size: 18px;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+/* line 1372, ../sass/screen.scss */
+.home-slider div.contenido-slide a:hover {
+  background: #bc6017;
+  text-decoration: none;
+}
+/* line 1378, ../sass/screen.scss */
+.home-slider .slick-arrow {
+  z-index: 99999;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+/* line 1394, ../sass/screen.scss */
+.home-slider .slick-arrow:before {
+  content: "\65";
+  font-family: "copper" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  font-size: 20px;
+  line-height: 1;
+  color: #c6c5c4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  opacity: 0.85;
+  width: 33px;
+  height: 108px;
+  padding: 44px 7px;
+}
+/* line 1413, ../sass/screen.scss */
+.home-slider .slick-arrow.slick-next {
+  right: 14px;
+}
+/* line 1415, ../sass/screen.scss */
+.home-slider .slick-arrow.slick-next:before {
+  content: "\63";
+}
+/* line 1420, ../sass/screen.scss */
+.home-slider .slick-dots {
+  position: absolute;
+  bottom: 8px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+/* line 1428, ../sass/screen.scss */
+.home-slider .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 1436, ../sass/screen.scss */
+.home-slider .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+/* line 1448, ../sass/screen.scss */
+.home-slider .slick-dots li button:before {
+  opacity: .75;
+  color: black;
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 14px;
+  height: 14px;
+  content: " ";
+  text-align: center;
+  opacity: 0.85;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  background: #4d4c4c;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+/* line 1470, ../sass/screen.scss */
+.home-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+  background: #bc6017;
+}
+
+/* line 1480, ../sass/screen.scss */
+.error_404 h1 {
+  text-align: center;
+  font-size: 112px;
+  margin-top: 85px;
+}
+/* line 1485, ../sass/screen.scss */
+.error_404 .excerpt {
+  display: none;
+}
+/* line 1488, ../sass/screen.scss */
+.error_404 .contenido-word {
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+@media (max-width: 1199px) {
+  /* line 1494, ../sass/screen.scss */
+  .last-footer {
+    font-size: 13px;
+    padding: 20px 0px;
+  }
+
+  /* line 1498, ../sass/screen.scss */
+  footer .mail a, footer .tel a {
+    font-size: 15px;
+  }
+
+  /* line 1501, ../sass/screen.scss */
+  .content-product .producto-white.entrada-category .pie-producto {
+    padding: 19px;
+  }
+
+  /* line 1504, ../sass/screen.scss */
+  .sales .fancy span:before, .sales .fancy span:after {
+    width: 75%;
+  }
+}
+@media (max-width: 991px) {
+  /* line 1509, ../sass/screen.scss */
+  .special-row .categoria-place a h3 {
+    font-size: 45px;
+  }
+
+  /* line 1512, ../sass/screen.scss */
+  .special-row .categoria-place a h3.secondary-title {
+    font-size: 16px;
+  }
+
+  /* line 1515, ../sass/screen.scss */
+  .mini-about .contenido {
+    font-size: 18px;
+    margin-bottom: 43px;
+  }
+
+  /* line 1519, ../sass/screen.scss */
+  .last-footer {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  /* line 1523, ../sass/screen.scss */
+  footer .mail a, footer .tel a {
+    font-size: 13px;
+  }
+
+  /* line 1526, ../sass/screen.scss */
+  .newsletter {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1532, ../sass/screen.scss */
+  .mini-about .nav-tabs {
+    font-size: 10px;
+  }
+
+  /* line 1535, ../sass/screen.scss */
+  .special-row .categoria-place {
+    position: relative;
+    max-width: 550px;
+    margin: 0 auto 3px;
+  }
+
+  /* line 1540, ../sass/screen.scss */
+  .special-row .cols {
+    padding: inherit;
+  }
+
+  /* line 1543, ../sass/screen.scss */
+  .special-row .cols-2 {
+    padding: inherit;
+  }
+
+  /* line 1546, ../sass/screen.scss */
+  .special-row .s-row {
+    max-width: 550px;
+    margin: auto;
+  }
+
+  /* line 1550, ../sass/screen.scss */
+  .special-row .s-margin {
+    margin-bottom: 0px;
+  }
+
+  /* line 1553, ../sass/screen.scss */
+  .special-row {
+    overflow: hidden;
+    padding: 0 5px;
+  }
+
+  /* line 1557, ../sass/screen.scss */
+  .mini-about .contenido {
+    padding: 0px;
+  }
+
+  /* line 1560, ../sass/screen.scss */
+  footer h3, footer ul, .mail, footer .tel, .last-footer, .last-footer .sign, .newsletter {
+    text-align: center;
+  }
+
+  /* line 1563, ../sass/screen.scss */
+  footer .imagen-footer img {
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  /* line 1567, ../sass/screen.scss */
+  .last-footer .sign {
+    margin-top: 13px;
+  }
+
+  /* line 1570, ../sass/screen.scss */
+  .sales .fancy span:before, .sales .fancy span:after {
+    width: 35%;
+  }
+
+  /* line 1573, ../sass/screen.scss */
+  .sales .fancy {
+    font-size: 18px;
+  }
+
+  /* line 1576, ../sass/screen.scss */
+  .sales .fancy span {
+    font-size: 24px;
+  }
+
+  /* line 1579, ../sass/screen.scss */
+  .newsletter .redes {
+    text-align: center;
+    margin-top: 17px;
+  }
+
+  /* line 1583, ../sass/screen.scss */
+  .contenido-word blockquote {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  /* line 1587, ../sass/screen.scss */
+  .contenido-word blockquote:before {
+    display: none;
+  }
+
+  /* line 1590, ../sass/screen.scss */
+  .contenido-word, .pagina-single .excerpt {
+    font-size: 18px;
+  }
+
+  /* line 1593, ../sass/screen.scss */
+  .pagina-single .excerpt {
+    margin-bottom: 25px;
+  }
+
+  /* line 1596, ../sass/screen.scss */
+  .pagina-single h1 {
+    font-size: 36px;
+  }
+
+  /* line 1599, ../sass/screen.scss */
+  .call-to-action {
+    padding: 45px 0px;
+  }
+  /* line 1601, ../sass/screen.scss */
+  .call-to-action h3, .call-to-action p {
+    font-size: 45px;
+  }
+  /* line 1604, ../sass/screen.scss */
+  .call-to-action p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  /* line 1609, ../sass/screen.scss */
+  .content-product .producto-white.entrada-category .pie-producto {
+    padding: 12px;
+  }
+
+  /* line 1612, ../sass/screen.scss */
+  .content-product .producto-white.entrada-category .pie-producto h2 {
+    font-size: 15px;
+  }
+
+  /* line 1615, ../sass/screen.scss */
+  .content-product .producto-white.entrada-category .cabezal img {
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  /* line 1620, ../sass/screen.scss */
+  .sales .fancy span:before, .sales .fancy span:after {
+    width: 15%;
+  }
+}
